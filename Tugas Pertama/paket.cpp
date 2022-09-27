@@ -35,7 +35,7 @@ void bersihlayar()
 
 void tambahdata(int x)
 {
-    gotoxy(20,15);cout<<"Inputkan Jenis Barang    : ";
+    gotoxy(20,15);cout<<"Inputkan Jenis Barang    : "; //input data hingga batas maksimal = 5
     cin>>kirim[x].jenis_brg;
     gotoxy(20,16);cout<<"Inputkan Berat           : ";
     cin>>kirim[x].berat;
@@ -90,7 +90,7 @@ int main()
         gotoxy(1,5);cout<<"4. Reset Data"<< endl;
         gotoxy(1,6);cout<<"5. Keluar"<< endl;
 
-        gotoxy(1,8);cout<<"Pilihan Anda [1-9] : ";
+        gotoxy(1,8);cout<<"Pilihan Anda [1-5] : ";
         cin>>pilih;
         switch(pilih){
             case 1 :
